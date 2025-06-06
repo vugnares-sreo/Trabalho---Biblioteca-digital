@@ -70,7 +70,7 @@ public class Biblioteca{
     }   
 
 
-    //Metodos get set, continuo sem saber pra que que serve(entendi fazendo o ngc de pesquisar pra que precisa)
+    //Metodos get set
 
     public void setLeitores(ArrayList<Leitor> leitores){
         this.leitores = leitores;
