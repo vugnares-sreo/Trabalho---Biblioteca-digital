@@ -3,11 +3,13 @@ import java.util.*;
 public class Biblioteca{
     private ArrayList<Leitor> leitores;
     private ArrayList<Livro> livros;
+    static int ativos;
 
 
     public Biblioteca(){
         livros = new ArrayList<Livro>();
         leitores = new ArrayList<Leitor>();
+        
     }
 
     public void addLivro(Livro livro){
@@ -56,7 +58,7 @@ public class Biblioteca{
     }
 
     public void gerarRelatorioUsuariosAtivos() {
-        int ativos = 0;
+        ativos = 0;
         System.out.println("=== Usuários Ativos ===");
 
         for (Leitor leitor : leitores) {
